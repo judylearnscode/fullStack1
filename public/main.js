@@ -1,4 +1,4 @@
-var thumbUp = document.getElementsByClassName("fa-solid fa-face-smile");
+var thumbUp = document.getElementsByClassName("fa-face-smile");
 
 
 Array.from(thumbUp).forEach(function(element) {
@@ -6,12 +6,12 @@ Array.from(thumbUp).forEach(function(element) {
         const name = this.parentNode.parentNode.childNodes[1].innerText
         const msg = this.parentNode.parentNode.childNodes[3].innerText
         const thumbUp = parseFloat(this.parentNode.parentNode.childNodes[5].innerText)
-        fetch('lines', {
+        fetch('/lines', {
           method: 'put',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
             'name': name,
-            'msg': msg,
+            'line': msg,
             'thumbUp':thumbUp
           })
         })

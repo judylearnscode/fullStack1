@@ -33,7 +33,7 @@
           <% for(var i=0; i<lines.length; i++) {%>
             <li class="message">
               <span><%= lines[i].name %></span>
-              <span><%= lines[i].msg %></span>
+              <span><%= lines[i].line %></span>
               <span><%= lines[i].thumbUp %></span>
               <span><i class="fa-solid fa-face-smile" aria-hidden="true"></i></span>
             </li>
@@ -43,7 +43,7 @@
         <% if (user.local.email) { %>
           <form action="/postLine" method="POST">
             <input type="text" placeholder="Name" name="name">
-            <input type="text" placeholder="Happy Moment"" name="line">
+            <input type="text" placeholder="Happy Moment" name="line">
             <button type="submit">Submit</button>
           </form>
         </div>

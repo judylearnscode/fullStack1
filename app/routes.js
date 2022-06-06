@@ -73,7 +73,7 @@ module.exports = function(app, passport, db) {
 
     app.put('/lines', (req, res) => {
       db.collection('lines')
-      .findOneAndUpdate({name: req.body.name, msg: req.body.msg}, {
+      .findOneAndUpdate({name: req.body.name, line: req.body.line}, {
         $set: {
           thumbUp:req.body.thumbUp + 1
         }
@@ -108,14 +108,14 @@ module.exports = function(app, passport, db) {
       })
     })
     
-    app.delete('/profile', (req, res) => {
-      db.collection('lines').deleteMany({
-        name: req.user.local.name
-      },(err, result) => {
-        if (err) return res.send(500, err)
-        res.send('deleted')
-      })
-    })
+    // app.delete('/profile', (req, res) => {
+    //   db.collection('lines').deleteMany({
+    //     name: req.user.local.name
+    //   },(err, result) => {
+    //     if (err) return res.send(500, err)
+    //     res.send('deleted')
+    //   })
+    // })
 
 // =============================================================================
 // AUTHENTICATE (FIRST LOGIN) ==================================================
