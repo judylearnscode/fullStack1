@@ -1,0 +1,37 @@
+body{
+  font-family: "Poppins", "Futura", sans-serif;
+  background-color: lavender;
+  margin:60px;
+  word-wrap:break-word;
+  text-align: center;
+}
+.beep {
+  background-color: lavender;
+}
+
+img{
+  background-size:contain;
+}
+
+button {
+  border-radius: 15px;
+}
+
+P {
+  margin: 10px;
+}
+
+.row {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  background-image: url("img/mainpage.png");
+  height: 800px;
+}
+
+h1, h2, h3 {
+  font-family: "Poppins", "Futura", sans-serif;
+}

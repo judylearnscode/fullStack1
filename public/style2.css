@@ -1,0 +1,28 @@
+body{
+    font-family: "Poppins", "Futura", sans-serif;
+    background-color: rgb(26, 26, 112);
+    margin:60px;
+    word-wrap:break-word;
+    text-align: center;
+    background-image: url("img/mainpage.png");
+    font-size:medium;
+  }
+  
+  button {
+    border-radius: 15px;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(227, 217, 217, 0.607);
+  }
+
+  h1, h2, h3 {
+    font-family: "Poppins", "Futura", sans-serif;
+  }
+
+  form {
+      text-align: center;
+  }
